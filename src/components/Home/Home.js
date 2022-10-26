@@ -11,7 +11,7 @@ const Home = () => {
   },[])
   return (
     <div>
-      <h4>all categry:{categories.length}</h4>
+      <h4>all category:{categories.length}</h4>
       {categories.name}
       
     </div>
