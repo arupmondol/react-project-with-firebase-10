@@ -24,6 +24,7 @@ const router = createBrowserRouter([
      },
      {
        path:'/courses',
+       loader: () =>fetch('https://assingment10-auth-server.vercel.app/product-categories'),
        element: <Courses></Courses>
      },
      {

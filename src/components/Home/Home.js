@@ -3,16 +3,9 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 
 const Home = () => {
-  const [categories, setCategories] = useState([])
-  useEffect(() =>{
-    fetch('https://assingment10-auth-server.vercel.app/product-categories')
-    .then(res => res.json())
-    .then(data => setCategories(data))
-  },[])
   return (
     <div>
-      <h4>all category:{categories.length}</h4>
-      {categories.name}
+    <h2>hi</h2>
       
     </div>
   );
