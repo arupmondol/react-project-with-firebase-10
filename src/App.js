@@ -10,6 +10,8 @@ import Register from './components/Register/Register';
 import Courses from './components/Courses/Courses';
 import Main from './components/Layout/Main';
 import Faq from './components/Faq/Faq';
+import SingleProduct from './components/SingleProduct/SingleProduct';
+import Product from './components/Product/Product';
 
 
 function App() {
@@ -22,10 +24,17 @@ const router = createBrowserRouter([
        path:'/home',
        element:<Home></Home>
      },
+
+      
      {
        path:'/courses',
        loader: () =>fetch('https://assingment10-auth-server.vercel.app/product-categories'),
        element: <Courses></Courses>
+     },
+     {
+      path:'/Product/:id',
+      loader:({params}) => fetch(`https://assingment10-auth-server.vercel.app/product-categories/${params.id}`),
+      element:<Product></Product>
      },
      {
        path:'/blog',

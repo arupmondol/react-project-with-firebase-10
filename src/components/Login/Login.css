@@ -1,0 +1,16 @@
+.login-form{
+  margin-left: 40%;
+  border-radius: 4px;
+  box-shadow: 4px black;
+
+}
+#email{
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.btn-submit{
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+ }
